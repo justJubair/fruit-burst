@@ -28,7 +28,7 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
+                'primary-color': '#F85559',
               }
             }
           }
@@ -45,29 +45,33 @@
         <!-- nav section starts -->
         <nav>
             <!-- container -->
-            <div class="flex justify-between">
+            <div class="flex justify-between items-center md:bg-primary-color md:rounded-full px-0 md:px-8 py-4 m-5">
                 <!-- nav items -->
-                <div class="flex gap-4">
-                    <a href="">Home</a>
-                    <a href="">About Us</a>
-                    <a href="">Shop</a>
-                    <a href="">All Fruits</a>
-                </div>
+               <div class="hidden md:block">
+                <div class="flex gap-6 text-white md:block">
+                  <a href="">Home</a>
+                  <a href="">About Us</a>
+                  <a href="">Shop</a>
+                  <a href="">All Fruits</a>
+              </div>
+               </div>
                 <!-- logo -->
                 <div class="flex items-center gap-4">
-                    <img src="images/logo.png" alt="">
-                    <h2 class="text-2xl">Fruit Burst</h2>
+                    <img src="images/logo.png" class="w-1/5" alt="">
+                    <h2 class="font-bold md:text-white text-xl md:text-2xl">Fruit Burst</h2>
                 </div>
+                <!-- hambure icon for mobile preview -->
+                <i class="fas fa-bars text-xl md:hidden"></i>
                 <!-- search box -->
-                <div>
-                    <input type="text" name="" id="">
+                <div class="hidden bg-white px-4 rounded-full md:block">
+                    <input type="text" placeholder="Search here" class="outline-none p-1" name="" id="">
+                    <i class="fas fa-search"></i>
                 </div>
             </div>
         </nav>
         <!-- nav section ends -->
     </header>
     <main>
-
     </main>
     <footer>
 
